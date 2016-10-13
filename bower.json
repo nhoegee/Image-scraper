@@ -1,0 +1,21 @@
+{
+  "name": "image-scraper",
+  "description": "A PHP image scraper.",
+  "main": "gruntfile.js",
+  "authors": [
+    "Nigel Hoegee"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "PHP",
+    "image-scraper"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

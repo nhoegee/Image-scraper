@@ -1,0 +1,107 @@
+/* line 1, ../../resources/assets/sass/main.scss */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* line 6, ../../resources/assets/sass/main.scss */
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/* line 12, ../../resources/assets/sass/main.scss */
+body {
+  color: #7f8c8d;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  height: 100vh;
+  line-height: 1.5;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+  padding-top: 3rem;
+  width: 100vw;
+}
+
+/* line 29, ../../resources/assets/sass/main.scss */
+.slider {
+  display: flex;
+  order: 2;
+  position: relative;
+}
+/* line 30, ../../resources/assets/sass/main.scss */
+.slider-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 580px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 52, ../../resources/assets/sass/main.scss */
+.previous,
+.next {
+  background: 0;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font-size: 3rem;
+  line-height: inherit;
+  padding: 1rem;
+  z-index: 10;
+}
+/* line 54, ../../resources/assets/sass/main.scss */
+.previous:hover,
+.next:hover {
+  color: #000;
+}
+/* line 58, ../../resources/assets/sass/main.scss */
+.previous:focus,
+.next:focus {
+  outline: 0;
+}
+
+/* line 72, ../../resources/assets/sass/main.scss */
+.previous {
+  order: 1;
+}
+
+/* line 76, ../../resources/assets/sass/main.scss */
+.next {
+  order: 3;
+}
+
+/* line 80, ../../resources/assets/sass/main.scss */
+.slide {
+  align-items: center;
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: center;
+  margin: 0;
+  max-width: 100%;
+  order: 2;
+  position: relative;
+}
+/* line 81, ../../resources/assets/sass/main.scss */
+.slide.is-next {
+  order: 1;
+}
+
+/* line 100, ../../resources/assets/sass/main.scss */
+.image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

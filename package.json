@@ -1,0 +1,31 @@
+{
+  "name": "image-scraper",
+  "version": "1.0.0",
+  "description": "A PHP image scraper.",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhoegee/Image-scraper.git"
+  },
+  "keywords": [
+    "PHP",
+    "image-scraper"
+  ],
+  "author": "Nigel Hoegee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhoegee/Image-scraper/issues"
+  },
+  "homepage": "https://github.com/nhoegee/Image-scraper#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-watch": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}

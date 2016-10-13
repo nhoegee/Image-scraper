@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #7f8c8d;
+  font: {
+    family: 'Open Sans', sans-serif;
+    size: 1rem;
+  }
+  height: 100vh;
+  line-height: 1.5;
+  margin: 0;
+  max: {
+    height: 100%;
+    width: 100%;
+  }
+  padding-top: 3rem;
+  width: 100vw;
+}
+
+.slider {
+  &-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+    max-width: 580px;
+    padding: {
+      left: 1rem;
+      right: 1rem;
+    }
+    overflow: hidden;
+    position: relative;
+  }
+
+  display: flex;
+  order:  2;
+  position: relative;
+}
+
+.previous,
+.next {
+  &:hover {
+    color: #000;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  background: 0;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font-size: 3rem;
+  line-height: inherit;
+  padding: 1rem;
+  z-index: 10;
+}
+
+.previous {
+  order: 1;
+}
+
+.next {
+  order: 3;
+}
+
+.slide {
+  &.is-next {
+    order: 1;
+  }
+
+  align-items: center;
+  display: flex;
+  flex: {
+    basis: 100%;
+    direction: column;
+    grow: 0;
+    shrink: 0;
+  }
+  justify-content: center;
+  margin: 0;
+  max-width: 100%;
+  order: 2;
+  position: relative;
+}
+
+.image {
+  display: block;
+  height: auto;
+  max-width: 100%
+}
