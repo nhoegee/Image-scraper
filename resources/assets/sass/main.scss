@@ -35,16 +35,17 @@ body {
       left: auto;
       right: auto;
     }
-    max-width: 580px;
+    max-width: 600px;
+    overflow: hidden;
     padding: {
       left: 1rem;
       right: 1rem;
     }
-    overflow: hidden;
     position: relative;
   }
 
   display: flex;
+  left: -529px;
   order:  2;
   position: relative;
 }

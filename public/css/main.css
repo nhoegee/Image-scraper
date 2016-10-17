@@ -28,6 +28,7 @@ body {
 /* line 29, ../../resources/assets/sass/main.scss */
 .slider {
   display: flex;
+  left: -529px;
   order: 2;
   position: relative;
 }
@@ -38,14 +39,14 @@ body {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 580px;
+  max-width: 600px;
+  overflow: hidden;
   padding-left: 1rem;
   padding-right: 1rem;
-  overflow: hidden;
   position: relative;
 }
 
-/* line 52, ../../resources/assets/sass/main.scss */
+/* line 53, ../../resources/assets/sass/main.scss */
 .previous,
 .next {
   background: 0;
@@ -57,28 +58,28 @@ body {
   padding: 1rem;
   z-index: 10;
 }
-/* line 54, ../../resources/assets/sass/main.scss */
+/* line 55, ../../resources/assets/sass/main.scss */
 .previous:hover,
 .next:hover {
   color: #000;
 }
-/* line 58, ../../resources/assets/sass/main.scss */
+/* line 59, ../../resources/assets/sass/main.scss */
 .previous:focus,
 .next:focus {
   outline: 0;
 }
 
-/* line 72, ../../resources/assets/sass/main.scss */
+/* line 73, ../../resources/assets/sass/main.scss */
 .previous {
   order: 1;
 }
 
-/* line 76, ../../resources/assets/sass/main.scss */
+/* line 77, ../../resources/assets/sass/main.scss */
 .next {
   order: 3;
 }
 
-/* line 80, ../../resources/assets/sass/main.scss */
+/* line 81, ../../resources/assets/sass/main.scss */
 .slide {
   align-items: center;
   display: flex;
@@ -92,12 +93,12 @@ body {
   order: 2;
   position: relative;
 }
-/* line 81, ../../resources/assets/sass/main.scss */
+/* line 82, ../../resources/assets/sass/main.scss */
 .slide.is-next {
   order: 1;
 }
 
-/* line 100, ../../resources/assets/sass/main.scss */
+/* line 101, ../../resources/assets/sass/main.scss */
 .image {
   display: block;
   height: auto;
