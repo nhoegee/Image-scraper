@@ -21,7 +21,7 @@
       preg_match_all( '/<img.*?alt="(.*?)".*?>/i', $html, $altMatches );
     ?>
     <div class="slider-container">
-      <div class="slider">
+      <div class="slider is-set">
         <?php foreach (range(1, 6) as $i): ?>
           <?php if ($i == 6): ?>
             <figure class="slide is-reference">

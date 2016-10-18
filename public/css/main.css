@@ -28,25 +28,52 @@ body {
 /* line 29, ../../resources/assets/sass/main.scss */
 .slider {
   display: flex;
-  left: -529px;
-  order: 2;
+  left: -100%;
   position: relative;
+  transform: translateX(100%);
 }
 /* line 30, ../../resources/assets/sass/main.scss */
 .slider-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 600px;
   overflow: hidden;
-  padding-left: 1rem;
-  padding-right: 1rem;
   position: relative;
 }
+/* line 35, ../../resources/assets/sass/main.scss */
+.slider.is-set {
+  transform: none;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+/* line 40, ../../resources/assets/sass/main.scss */
+.slider.is-reversing {
+  transform: translateX(-100%);
+}
+@media (min-width: 30em) {
+  /* line 40, ../../resources/assets/sass/main.scss */
+  .slider.is-reversing {
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 40em) {
+  /* line 40, ../../resources/assets/sass/main.scss */
+  .slider.is-reversing {
+    transform: translateX(-33.33333%);
+  }
+}
+@media (min-width: 30em) {
+  /* line 29, ../../resources/assets/sass/main.scss */
+  .slider {
+    left: -50%;
+    transform: translateX(50%);
+  }
+}
+@media (min-width: 40em) {
+  /* line 29, ../../resources/assets/sass/main.scss */
+  .slider {
+    left: -33.33333%;
+    transform: translateX(33.33333%);
+  }
+}
 
-/* line 53, ../../resources/assets/sass/main.scss */
+/* line 68, ../../resources/assets/sass/main.scss */
 .previous,
 .next {
   background: 0;
@@ -58,28 +85,18 @@ body {
   padding: 1rem;
   z-index: 10;
 }
-/* line 55, ../../resources/assets/sass/main.scss */
+/* line 70, ../../resources/assets/sass/main.scss */
 .previous:hover,
 .next:hover {
   color: #000;
 }
-/* line 59, ../../resources/assets/sass/main.scss */
+/* line 74, ../../resources/assets/sass/main.scss */
 .previous:focus,
 .next:focus {
   outline: 0;
 }
 
-/* line 73, ../../resources/assets/sass/main.scss */
-.previous {
-  order: 1;
-}
-
-/* line 77, ../../resources/assets/sass/main.scss */
-.next {
-  order: 3;
-}
-
-/* line 81, ../../resources/assets/sass/main.scss */
+/* line 88, ../../resources/assets/sass/main.scss */
 .slide {
   align-items: center;
   display: flex;
@@ -91,14 +108,28 @@ body {
   margin: 0;
   max-width: 100%;
   order: 2;
+  padding-left: 1rem;
+  padding-right: 1rem;
   position: relative;
 }
-/* line 82, ../../resources/assets/sass/main.scss */
+/* line 89, ../../resources/assets/sass/main.scss */
 .slide.is-reference {
   order: 1;
 }
+@media (min-width: 30em) {
+  /* line 88, ../../resources/assets/sass/main.scss */
+  .slide {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 40em) {
+  /* line 88, ../../resources/assets/sass/main.scss */
+  .slide {
+    flex-basis: 33.33333%;
+  }
+}
 
-/* line 101, ../../resources/assets/sass/main.scss */
+/* line 120, ../../resources/assets/sass/main.scss */
 .image {
   display: block;
   height: auto;

@@ -28,26 +28,41 @@ body {
 
 .slider {
   &-container {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: {
-      left: auto;
-      right: auto;
-    }
-    max-width: 600px;
     overflow: hidden;
-    padding: {
-      left: 1rem;
-      right: 1rem;
-    }
     position: relative;
   }
 
+  &.is-set {
+    transform: none;
+    transition: transform .5s cubic-bezier(.23, 1, .32, 1);
+  }
+
+  &.is-reversing {
+    @media (min-width: 30em) {
+      transform: translateX(-50%);
+    }
+
+    @media (min-width: 40em) {
+      transform: translateX(-33.33333%);
+    }
+
+    transform: translateX(-100%);
+  }
+
+  @media (min-width: 30em) {
+    left: -50%;
+    transform: translateX(50%);
+  }
+
+  @media (min-width: 40em) {
+    left: -33.33333%;
+    transform: translateX(33.33333%);
+  }
+
   display: flex;
-  left: -529px;
-  order:  2;
+  left: -100%;
   position: relative;
+  transform: translateX(100%);
 }
 
 .previous,
@@ -70,17 +85,17 @@ body {
   z-index: 10;
 }
 
-.previous {
-  order: 1;
-}
-
-.next {
-  order: 3;
-}
-
 .slide {
   &.is-reference {
     order: 1;
+  }
+
+  @media (min-width: 30em) {
+    flex-basis: 50%;
+  }
+
+  @media (min-width: 40em) {
+    flex-basis: 33.33333%;
   }
 
   align-items: center;
@@ -95,6 +110,10 @@ body {
   margin: 0;
   max-width: 100%;
   order: 2;
+  padding: {
+    left: 1rem;
+    right: 1rem;
+  }
   position: relative;
 }
 
