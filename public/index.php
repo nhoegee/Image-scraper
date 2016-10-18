@@ -24,7 +24,7 @@
       <div class="slider">
         <?php foreach (range(1, 6) as $i): ?>
           <?php if ($i == 6): ?>
-            <figure class="slide is-next">
+            <figure class="slide is-previous">
               <img class="image" src="<?= $url . $srcMatches[1][$i] ?>" alt="<?= $altMatches[1][$i] ?>" />
               <figcaption>
                 <span><?= $altMatches[1][$i] ?></span>

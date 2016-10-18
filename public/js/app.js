@@ -35,16 +35,15 @@ var slider = ( function (document) {
       });
 
       if ( next.length > 0 ) {
-        console.log(next);
         return next;
       } else {
-        return [_slides[0]];
+        return [_slides[ 0 ]];
       }
     };
 
+    // TODO: Fix _setStyle.
     var _setStyle = function ( elements, property, value ) {
       elements.forEach(function(element) {
-        console.log(property, value);
         element.style.property = value;
       });
     }
@@ -52,11 +51,11 @@ var slider = ( function (document) {
     var _slide = function ( e ) {
       e.preventDefault();
 
-      var slides = _queryAll( _slider, '.slide.is-next' );
-      _removeClass(slides, 'is-next');
+      var slides = _queryAll( _slider, '.slide.is-previous' );
+      _removeClass(slides, 'is-previous');
 
       var newSlide = _next( slides );
-      _addClass(newSlide, 'is-next');
+      _addClass(newSlide, 'is-previous');
 
       var i = j;
       var j;

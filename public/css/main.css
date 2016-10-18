@@ -94,7 +94,7 @@ body {
   position: relative;
 }
 /* line 82, ../../resources/assets/sass/main.scss */
-.slide.is-next {
+.slide.is-previous {
   order: 1;
 }
 
